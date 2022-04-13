@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-title>
+      <ion-icon name="heart-outline"></ion-icon>
+      Calculadora do Amor
+      <ion-icon name="heart-outline"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="fundo">
+  
+
+
+  
+
+  <br>
+
+  <ion-item>
+    <ion-label position="floating">Nome 1:</ion-label>
+    <ion-input type="text" [(ngModel)]="nome1"></ion-input>
+  </ion-item>
+
+  <br>
+
+
+  <ion-item>
+    <ion-label position="floating">Nome 2:</ion-label>
+    <ion-input type="text" [(ngModel)]="nome2"></ion-input>
+  </ion-item>
+
+  <br>
+
+  <ion-button expand="block" (click)="enviarDados()" color="danger">
+    Calcular
+  </ion-button>
+
+  <br>
+
+    <ion-label>
+    A porcentagem é
+    {{resultado}} %
+    </ion-label>
+
+  <br>
+
+ <ion-button color="light" expand="block" (click)="limpar()">
+      Limpar
+ </ion-button>
+  <br>
+
+  <ion-label color="danger" ><h1>{{msg}}</h1></ion-label>
+  
+ <ion-label>
+  <img src="../../assets/img/meme/{{img}}" alt="">
+  </ion-label>
+
+</div>
+</ion-content>
